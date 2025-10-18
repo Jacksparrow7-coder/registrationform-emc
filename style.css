@@ -1,0 +1,142 @@
+/* --- Elegant Pro Theme --- */
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #eaeaea;
+  margin: 0;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  color: #eaeaea;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+
+/* Form container */
+form {
+  max-width: 520px;
+  margin: 0 auto 30px auto;
+  padding: 25px 30px;
+  border-radius: 16px;
+  background: rgba(25, 30, 35, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+form:hover {
+  box-shadow: 0 10px 30px rgba(0, 255, 255, 0.2);
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select {
+  width: 90%;
+  margin: 2%;
+  padding: 2%;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  outline: none;
+  background: rgba(255, 255, 255, 0.05);
+  color: #eaeaea;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+option {
+  background: #1e2328;
+  color: #eaeaea;
+}
+input:focus,
+select:focus {
+  border-color: #00d4ff;
+  box-shadow: 0 0 8px #00d4ff;
+}
+
+/* Radio & Checkbox */
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: #00d4ff;
+  margin-right: 5px;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #007a91, #00d4ff);
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-right: 8px;
+}
+
+button:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 12px rgba(0, 212, 255, 0.6);
+}
+
+/* Table Section */
+table {
+  margin: auto;
+  max-width: 700px;
+  width: 95%;
+  border-collapse: collapse;
+  margin-top: 30px;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.15);
+}
+
+thead {
+  background: rgba(0, 255, 255, 0.15);
+}
+
+thead th {
+  color: #00ffff;
+  text-transform: uppercase;
+  padding: 2%;
+  letter-spacing: 1px;
+}
+
+tbody tr {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+td {
+  padding: 2%;
+  text-align: center;
+  color: #e0e0e0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  form {
+    padding: 15px;
+  }
+  table th,
+  table td {
+    font-size: 13px;
+    width: 90%;
+  }
+}
+
+/* Error message */
+span[name="errormessage"] {
+  display: block;
+  margin-top: 3px;
+  font-size: 13px;
+  color: #ff6b6b;
+}

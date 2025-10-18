@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" >
+  </head>
+  <body>
+<!-- form -->
+    <h1>Registration Form</h1>
+    <form id="userForm">
+      <p>
+        <label for="username">Username:</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your name"
+          required
+        />
+        <span id="username-error" name="errormessage"></span>
+      </p>
+      <p>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="50" required />
+        <span id="age-error" name="errormessage"></span>
+      </p>
+      <p>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="gender-male" name="gender" value="male" /> Male
+        <input type="radio" id="gender-female" name="gender" value="female" />
+        Female
+        <input type="radio" id="gender-other" name="gender" value="other" />
+        Other
+        <span id="gender-error" name="errormessage"></span>
+      </p>
+      <p>
+        <label for="course">Select Your Course:</label>
+        <select id="course" name="course">
+          <option value="python">Python</option>
+          <option value="java">Java</option>
+          <option value="javascript">JavaScript</option>
+          <option value="php">Php</option>
+        </select>
+        <span id="course-error" name="errormessage"></span>
+      </p>
+      <p>
+        <label for="email">E-mail:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <span id="email-error" name="errormessage"></span>
+      </p>
+      <p>
+        <label for="terms">
+          <input type="checkbox" id="terms" name="terms" required />
+          I agree to the terms and conditions</label
+        >
+      </p>
+      <p>
+        <button type="button" id="saveBtn">Save</button>
+        <button type="reset">Reset</button>
+      </p>
+    </form>
+<!-- Table -->
+    <table id="dataTable" border="1" cellspacing="0" cellpadding="8">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Gender</th>
+          <th>Course</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+<!-- javascript -->
+    <script src="script.js"></script>
+  </body>
+</html>
